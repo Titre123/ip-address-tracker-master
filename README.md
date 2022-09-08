@@ -92,7 +92,7 @@ I wil be working more on React project in order to improved my technical skills.
 
 ## Author
 
-- Mail - [Add your name here](taiwotriumphant@gmail.com)
+- Mail - [Taiwo Ola-Balogun](taiwotriumphant@gmail.com)
 - Frontend Mentor - [@Tiazzy](https://www.frontendmentor.io/profile/Tiazzy)
 - Twitter - [@TayworT](https://www.twitter.com/TayworT)
 
