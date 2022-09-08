@@ -54,9 +54,8 @@ I learn how to set state and initialize state with the useState hook.
 
 ```js
 const [ip,setIp] = useState("")
-    const [state,setState] = useState( JSON.parse(localStorage.getItem("state")) || {"ip":"","location":{"country":"US","region":"","city":"","lat":37.38605,"lng":-122.08385,"postalCode":"","timezone":"","geonameId":5375480},"domains":["bitc.blog","serveur-sg.fr","www.bitc.blog","www.drysaunabenefits.com","www.oursaunas.com"],"as":{"asn":15169,"name":"GOOGLE","route":"8.8.8.0/24","domain":"","type":"Content"},"isp":""})
-    const [input,setInput] = useState("")
-}
+const [state,setState] = useState( JSON.parse(localStorage.getItem("state")) || {"ip":"","location":{"country":"US","region":"","city":"","lat":37.38605,"lng":-122.08385,"postalCode":"","timezone":"","geonameId":5375480},"domains":["bitc.blog","serveur-sg.fr","www.bitc.blog","www.drysaunabenefits.com","www.oursaunas.com"],"as":{"asn":15169,"name":"GOOGLE","route":"8.8.8.0/24","domain":"","type":"Content"},"isp":""})
+const [input,setInput] = useState("")
 ```
 
 I learnt how to fetch request from API using useEffect hook and also how to use localStorage
@@ -76,11 +75,9 @@ React.useEffect(() =>{
         }
     },[ip])
 
-
-    React.useEffect(function(){
-        localStorage.setItem("state",JSON.stringify(state))
-    },[state])
-
+React.useEffect(function(){
+  localStorage.setItem("state",JSON.stringify(state))
+},[state])
 ```
 
 ### Continued development
