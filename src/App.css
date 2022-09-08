@@ -1,0 +1,193 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  width: 100vw;
+  font-family: 'Rubik',sans-serif;
+  background: url(../ip-address-tracker-master/images/pattern-bg.png);
+  padding-top: 40px;
+}
+
+.board{
+  display: flex;
+  width: 85%;
+  height: 200px;
+  background: #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 30%;
+  left: 7.5%;
+  z-index: 1000;
+  padding: 25px 0;
+}
+
+.alone{
+  height: 100%;
+  width: 25%;
+  padding: 1.5em;
+}
+.lilboard:not(.alone) {
+  border-right: 1px solid rgb(193, 192, 192);
+  height: 100%;
+  width: 25%;
+  padding: 1.5em;
+}
+
+.lilboard h1{
+  color: var(--DarkGray);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.lilboard h2{
+  margin-top: 20px;
+  color: var(--VeryDarkGray);
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 120%;
+  width: 100%;
+}
+.top-info h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.top-info{
+  margin-bottom: 150px;
+}
+
+.map{
+  margin-top: 30px;
+}
+
+.text-inp{
+  width: 50%;
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: none;
+  padding: 20px 30px;
+  font-size: 1.25rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+form button{
+  min-width: 45px;
+  height: 70px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+  background: var(--VeryDarkGray);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .text-inp{
+    font-size: 1rem;
+    padding: 15px 25px;
+    height: 60px;
+  }
+  form button{
+    height: 60px;
+  }
+  .lilboard h1{
+    font-size: 0.8rem;
+  }
+  .lilboard h2{
+    font-size: 1.4rem;
+    text-overflow: ellipsis;
+  }
+  .top-info h1{
+    font-size: 1.6rem;
+  }
+  .top-info{
+    margin-bottom: 100px;
+  }
+  .lilboard:not(.alone),.alone{
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 700px){
+  .text-inp {
+    font-size: 1rem;
+    padding: 0 15px;
+    height: 50px;
+  }
+    form button {
+      height: 50px;
+    }
+  .lilboard h1 {
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+  
+  .lilboard h2 {
+    margin-top: 0;
+    font-size: 1.0rem;
+  }
+    .top-info h1 {
+      font-size: 1.2rem;
+    }
+  
+    .top-info {
+      margin-bottom: 80px;
+    }
+    .board{
+      top: 20%;
+      height: 150px;
+      margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+  .top-info h1 {
+    font-size: 1.0rem;
+  }
+
+  .top-info {
+    margin-bottom: 70px;
+  }
+
+  .board {
+    display: flex;
+    min-height: 300px;
+    top: 20%;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: center;
+    gap: 0;
+    margin-top: 20px;
+  }
+
+  .lilboard:not(.alone),.alone{
+    border-right: none;
+    margin-top: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .lilboard h1{
+    font-size: 0.85rem;
+  }
+    .lilboard h2 {
+      font-size: 1.4rem;
+    }
+}
