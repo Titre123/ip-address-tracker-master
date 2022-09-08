@@ -56,7 +56,7 @@ export default function App(){
                 </div>
                 <div className="lilboard">
                     <h1>TimeZone</h1>
-                    <h2>{state.location.timezone}</h2>
+                    <h2>UTC {state.location.timezone}</h2>
                 </div>
                 <div className="lilboard alone">
                     <h1>ISP</h1>
