@@ -62,7 +62,7 @@ I learnt how to fetch request from API using useEffect hook and also how to use 
 
 ```js
 React.useEffect(() =>{
-        let apiKey = 'at_t8rOM8KG9VLZKlGH73qnXzEITTQme';
+        let apiKey = api-key;
         if (ip) {
             fetch('https://geo.ipify.org/api/v2/country,city?apiKey=' + apiKey + '&ipAddress=' + ip)
             .then(response => response.json())
